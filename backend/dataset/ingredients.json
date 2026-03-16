@@ -1,0 +1,239 @@
+{
+  "sodium hyaluronate": {
+    "good_for": ["dry", "sensitive"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 3
+  },
+
+  "beta glucan": {
+    "good_for": ["dry", "sensitive"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 2
+  },
+
+  "aloe vera": {
+    "good_for": ["sensitive", "dry"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 2
+  },
+
+  "urea": {
+    "good_for": ["dry"],
+    "avoid_for": ["sensitive"],
+    "pregnancy_safe": true,
+    "weight": 2
+  },
+
+  "propylene glycol": {
+    "good_for": ["dry"],
+    "avoid_for": ["sensitive"],
+    "pregnancy_safe": true,
+    "weight": 1
+  },
+
+  "butylene glycol": {
+    "good_for": ["dry"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 1
+  },
+
+  "caprylic triglyceride": {
+    "good_for": ["dry"],
+    "avoid_for": ["acne"],
+    "pregnancy_safe": true,
+    "weight": 1
+  },
+
+  "caprylic capric triglyceride": {
+    "good_for": ["dry"],
+    "avoid_for": ["acne"],
+    "pregnancy_safe": true,
+    "weight": 1
+  },
+
+  "cetearyl alcohol": {
+    "good_for": ["dry"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 1
+  },
+
+  "cetyl alcohol": {
+    "good_for": ["dry"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 1
+  },
+
+  "stearyl alcohol": {
+    "good_for": ["dry"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 1
+  },
+
+  "behenyl alcohol": {
+    "good_for": ["dry"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 1
+  },
+
+  "tocopherol": {
+    "good_for": ["aging", "dry"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 2
+  },
+
+  "vitamin e": {
+    "good_for": ["aging", "dry"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 2
+  },
+
+  "peptides": {
+    "good_for": ["aging"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 2
+  },
+
+  "copper peptides": {
+    "good_for": ["aging"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 2
+  },
+
+  "collagen": {
+    "good_for": ["aging", "dry"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 1
+  },
+
+  "bakuchiol": {
+    "good_for": ["aging"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 3
+  },
+
+  "kojic acid": {
+    "good_for": ["hyperpigmentation"],
+    "avoid_for": ["sensitive"],
+    "pregnancy_safe": true,
+    "weight": 2
+  },
+
+  "alpha arbutin": {
+    "good_for": ["hyperpigmentation"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 2
+  },
+
+  "tranexamic acid": {
+    "good_for": ["hyperpigmentation"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 3
+  },
+
+  "licorice root": {
+    "good_for": ["sensitive", "hyperpigmentation"],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 2
+  },
+
+  "rose water": {
+    "good_for": ["normal"],
+    "avoid_for": ["sensitive"],
+    "pregnancy_safe": true,
+    "weight": 0
+  },
+
+  "lavender oil": {
+    "good_for": [],
+    "avoid_for": ["sensitive"],
+    "pregnancy_safe": true,
+    "weight": -2
+  },
+
+  "eucalyptus oil": {
+    "good_for": [],
+    "avoid_for": ["sensitive"],
+    "pregnancy_safe": true,
+    "weight": -2
+  },
+
+  "peppermint oil": {
+    "good_for": [],
+    "avoid_for": ["sensitive"],
+    "pregnancy_safe": true,
+    "weight": -2
+  },
+
+  "menthol": {
+    "good_for": [],
+    "avoid_for": ["sensitive"],
+    "pregnancy_safe": true,
+    "weight": -2
+  },
+
+  "phenoxyethanol": {
+    "good_for": [],
+    "avoid_for": ["sensitive"],
+    "pregnancy_safe": true,
+    "weight": -1
+  },
+
+  "parabens": {
+    "good_for": [],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 0
+  },
+
+  "methylparaben": {
+    "good_for": [],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 0
+  },
+
+  "propylparaben": {
+    "good_for": [],
+    "avoid_for": [],
+    "pregnancy_safe": true,
+    "weight": 0
+  },
+
+  "benzyl alcohol": {
+    "good_for": [],
+    "avoid_for": ["sensitive"],
+    "pregnancy_safe": true,
+    "weight": -1
+  },
+
+  "sodium lauryl sulfate": {
+    "good_for": ["oily"],
+    "avoid_for": ["dry", "sensitive"],
+    "pregnancy_safe": true,
+    "weight": -3
+  },
+
+  "sodium laureth sulfate": {
+    "good_for": ["oily"],
+    "avoid_for": ["dry", "sensitive"],
+    "pregnancy_safe": true,
+    "weight": -3
+  }
+}

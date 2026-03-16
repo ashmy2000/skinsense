@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eef3fb;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+}
+
+/* ───────────────── PAGE ROOT ───────────────── */
+
+.ss-root {
+  min-height: 100vh;
+  background: linear-gradient(160deg,#ddeaf8 0%,#eaf1fb 40%,#f0eef8 100%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:70px 20px 90px;
+  position:relative;
+  overflow:hidden;
+}
+
+/* blue glow */
+
+.ss-root::before{
+  content:'';
+  position:fixed;
+  top:-160px;
+  left:50%;
+  transform:translateX(-50%);
+  width:720px;
+  height:600px;
+  background:radial-gradient(ellipse,rgba(150,190,240,0.35)0%,transparent70%);
+  pointer-events:none;
+}
+
+/* purple glow */
+
+.ss-root::after{
+  content:'';
+  position:fixed;
+  bottom:-120px;
+  right:-80px;
+  width:480px;
+  height:480px;
+  background:radial-gradient(ellipse,rgba(190,175,230,0.25)0%,transparent70%);
+}
+
+/* ───────────────── INNER WRAPPER ───────────────── */
+
+.ss-inner{
+  position:relative;
+  z-index:1;
+  width:100%;
+  max-width:540px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  animation:fadeUp .6s ease both;
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* ───────────────── LOGO ───────────────── */
+
+.ss-logo{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  margin-bottom:22px;
+}
+
+.ss-logo-mark{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#6aaee8,#a89fdc);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  color:#fff;
+  box-shadow:0 4px 14px rgba(100,160,230,.35);
+}
+
+.ss-wordmark{
+  font-family:'Cormorant Garamond',serif;
+  font-size:25px;
+  letter-spacing:.1em;
+  color:#2a3a5c;
+}
+
+/* ───────────────── HEADING ───────────────── */
+
+.ss-heading{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:300;
+  font-size:44px;
+  text-align:center;
+  color:#1e2d4a;
+  margin-bottom:8px;
+}
+
+.ss-heading em{color:#5a96d8;}
+
+.ss-subtitle{
+  font-size:12px;
+  letter-spacing:.08em;
+  color:#8a9bb8;
+  text-transform:uppercase;
+  margin-bottom:36px;
+}
+
+/* ───────────────── SEARCH BAR ───────────────── */
+
+.ss-search-wrap{
+  position:relative;
+  width:100%;
+  margin-bottom:34px;
+}
+
+.ss-search-icon{
+  position:absolute;
+  left:16px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#aabbd4;
+}
+
+.ss-search{
+  width:100%;
+  padding:16px 18px 16px 46px;
+  background:rgba(255,255,255,.8);
+  border-radius:14px;
+  border:1px solid rgba(130,170,220,.25);
+  font-size:14px;
+  transition:.25s;
+}
+
+.ss-search:focus{
+  border-color:rgba(90,150,216,.55);
+  box-shadow:0 0 0 4px rgba(90,150,216,.12);
+}
+
+/* ───────────────── PROFILE CARD ───────────────── */
+
+.ss-card{
+  width:100%;
+  background:rgba(255,255,255,.65);
+  border-radius:22px;
+  padding:32px 28px;
+  backdrop-filter:blur(12px);
+  box-shadow:0 6px 26px rgba(100,150,220,.1);
+
+  display:flex;
+  flex-direction:column;
+  gap:26px;
+}
+
+/* question groups */
+
+.ss-group{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.ss-group-label{
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#8a9dba;
+}
+
+/* options layout */
+
+.ss-options{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+/* ───────────────── OPTION CHIPS ───────────────── */
+
+.ss-chip{
+  padding:10px 18px;
+  border-radius:11px;
+  border:1px solid rgba(130,170,220,.25);
+  background:rgba(255,255,255,.75);
+  font-size:13px;
+  cursor:pointer;
+  transition:.18s;
+  box-shadow:0 1px 4px rgba(100,150,220,.08);
+}
+
+.ss-chip:hover{
+  background:rgba(220,235,255,.7);
+  border-color:rgba(90,150,216,.5);
+}
+
+.ss-chip.selected{
+  background:linear-gradient(
+    135deg,
+    rgba(106,174,232,.25),
+    rgba(168,159,220,.2)
+  );
+  border-color:rgba(90,150,216,.55);
+}
+
+/* ───────────────── CTA BUTTON ───────────────── */
+
+.ss-cta{
+  width:100%;
+  margin-top:28px;
+  padding:16px;
+  border-radius:14px;
+  border:none;
+
+  background:linear-gradient(135deg,#6aaee8 0%,#a89fdc 100%);
+  color:white;
+
+  font-size:13px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  cursor:pointer;
+
+  transition:.2s;
+  box-shadow:0 6px 22px rgba(100,160,230,.3);
+}
+
+.ss-cta:hover{
+  transform:translateY(-1px);
+  box-shadow:0 10px 28px rgba(100,160,230,.4);
+}
+
+/* ───────────────── RESULT CARD ───────────────── */
+
+.ss-result{
+  margin-top:42px;
+  padding:28px;
+  border-radius:16px;
+  background:white;
+  box-shadow:0 12px 32px rgba(0,0,0,.08);
+  text-align:center;
+}
+
+.ss-result-title{
+  margin-bottom:14px;
+}
+
+.ss-result-section{
+  margin-top:18px;
+}
+
+/* result lists */
+
+.ss-result-section ul{
+  list-style:none;
+  padding:0;
+  margin-top:10px;
+}
+
+.ss-result-section li{
+  margin-bottom:6px;
+}
+
+/* ───────────────── PRODUCT IMAGE ───────────────── */
+
+.ss-product-image{
+  margin:20px 0;
+}
+
+.ss-product-image img{
+  max-width:160px;
+  border-radius:12px;
+  box-shadow:0 10px 24px rgba(0,0,0,.15);
+}
+
+/* ───────────────── PREVIEW CARD ───────────────── */
+
+.ss-preview{
+  margin-top:30px;
+  background:white;
+  padding:28px;
+  border-radius:14px;
+  width:100%;
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
+  text-align:center;
+}
+
+.ss-preview-image{
+  max-width:160px;
+  margin:20px auto;
+}
+
+.ss-preview-actions{
+  display:flex;
+  justify-content:center;
+  gap:22px;
+}
+
+.ss-confirm{
+  background:#4CAF50;
+  color:white;
+  border:none;
+  padding:10px 22px;
+  border-radius:9px;
+}
+
+.ss-retry{
+  background:#f44336;
+  color:white;
+  border:none;
+  padding:10px 22px;
+  border-radius:9px;
+}
+
+/* ───────────────── INGREDIENT BUTTON ───────────────── */
+
+.ss-ingredients-btn{
+  margin-top:18px;
+  padding:11px 20px;
+  border-radius:12px;
+  border:1px solid rgba(130,170,220,.3);
+
+  background:linear-gradient(
+    135deg,
+    rgba(106,174,232,.2),
+    rgba(168,159,220,.18)
+  );
+
+  color:#3a6aaa;
+  font-size:13px;
+  font-weight:500;
+  cursor:pointer;
+
+  transition:.2s;
+}
+
+.ss-ingredients-btn:hover{
+  background:linear-gradient(
+    135deg,
+    rgba(106,174,232,.4),
+    rgba(168,159,220,.3)
+  );
+
+  box-shadow:0 6px 18px rgba(90,150,216,.2);
+  transform:translateY(-1px);
+}
+
+.ss-ingredients-btn:active{
+  transform:scale(.97);
+}
+
+/* ───────────────── INGREDIENT LIST ───────────────── */
+
+.ss-ingredient-list{
+  margin-top:14px;
+  padding:14px 16px;
+  border-radius:12px;
+
+  background:rgba(255,255,255,.65);
+  border:1px solid rgba(170,200,240,.25);
+
+  font-size:13px;
+  line-height:1.6;
+  color:#3a4a65;
+}
