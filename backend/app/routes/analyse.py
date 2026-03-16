@@ -5,7 +5,6 @@ from app.services.ingredient_analyzer import analyse_ingredients
 
 router = APIRouter()
 
-
 @router.post("/analyse")
 def analyse_product(data: AnalyseRequest):
 

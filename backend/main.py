@@ -5,15 +5,9 @@ import os
 
 from app.routes.analyse import router
 
-# load .env file
 load_dotenv()
 
-# Swagger UI will be available at /docs
 app = FastAPI(title="SkinSense API")
-
-origins = [
-    os.getenv("FRONTEND_ORIGIN")
-]
 
 app.add_middleware(
     CORSMiddleware,
@@ -23,4 +17,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# health endpoint
+@app.get("/")
+def health_check():
+    return {"status": "SkinSense API running"}
+
+# register analyse routes
 app.include_router(router)
