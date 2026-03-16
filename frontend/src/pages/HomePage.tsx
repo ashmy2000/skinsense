@@ -107,7 +107,7 @@ function HomePage() {
 
       setLoading(true)
 
-      const response = await fetch("http://localhost:8000/analyse", {
+      const response = await fetch("https://skinsense-backend-hkedcphffmd3eghn.centralus-01.azurewebsites.net/analyse", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
