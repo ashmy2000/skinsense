@@ -107,7 +107,7 @@ function HomePage() {
 
       setLoading(true)
 
-      const response = await fetch('${import.meta.env.VITE_API_URL}/analyse', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/analyse`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
