@@ -1,8 +1,8 @@
-import requests
+import requests, os
 from app.utils.product_selector import select_best_product
 from app.utils.ingredient_translation import normalize_ingredients
 
-OPENFOOD_API = "https://world.openfoodfacts.org/cgi/search.pl"
+OPENFOOD_API = os.getenv("OPENFOOD_API")
 
 
 def get_product_data(query: str):
