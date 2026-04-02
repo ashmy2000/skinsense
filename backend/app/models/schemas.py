@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-
+""" Schemas for the API requests and responses."""
 class Profile(BaseModel):
     skinType: str
     sensitivity: str
